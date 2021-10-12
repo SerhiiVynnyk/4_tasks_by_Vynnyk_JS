@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <script>
+            function myFunction() {
+            
+              let x = document.getElementById("nam").value;
+              
+              let name = x.toLowerCase();
+
+              let text;
+
+              if (name == "вячеслав") {
+                text = " Привет, Вячеслав!";
+              } else {
+                text = "Нет такого имени.";
+              }
+              document.getElementById("greeting").innerHTML = text;
+            }
+
+      </script>
+      <style>
+        body {
+          background: #555;
+        }
+
+        div {
+          max-width: 300px;
+          margin: auto;
+          background: white;
+          padding: 10px;
+        }
+      </style>
+    </head>
+    <body>
+
+      <h1 align="center">
+        Задание № 2, Сергей Винник: 
+      </h1>
+      <div>
+        <p> Введите имя: </p>
+
+        <input id="nam">
+
+        <button type="button" onclick="myFunction()">Нажать</button>
+
+        <p id="greeting"></p>
+      </div>
+    </body>
+  </html> 

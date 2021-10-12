@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <script>
+            function myFunction() {
+            
+              let x = document.getElementById("number").value;
+              
+              let text;
+              if (isNaN(x) || x < 8) {
+                text = "Введите число больше 7";
+              } else {
+                text = "Привет!";
+              }
+              document.getElementById("greeting").innerHTML = text;
+            }
+
+      </script>
+      <style>
+        body {
+          background: #555;
+        }
+
+        div {
+          max-width: 300px;
+          margin: auto;
+          background: white;
+          padding: 10px;
+        }
+      </style>
+    </head>
+    <body>
+
+      <h1 align="center">
+        Задание № 1, Сергей Винник: 
+      </h1>
+      <div>
+        <p> Введите число больше 7: </p>
+
+        <input id="number">
+
+        <button type="button" onclick="myFunction()">Нажать</button>
+
+        <p id="greeting"></p>
+      </div>
+    </body>
+  </html> 
